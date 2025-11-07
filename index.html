@@ -1,86 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mundo do Trabalho e Inovações</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<style>
-  body {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    background: linear-gradient(135deg, #5e60ce, #48bfe3);
-    color: #fff;
-  }
-  header {
-    text-align: center;
-    padding: 60px 20px 30px;
-  }
-  header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-  }
-  header p {
-    font-size: 1.1em;
-    max-width: 700px;
-    margin: auto;
-  }
-  section {
-    max-width: 850px;
-    background: rgba(0, 0, 0, 0.3);
-    margin: 30px auto;
-    padding: 30px;
-    border-radius: 15px;
-  }
-  section h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  ul { line-height: 1.7; }
-  .highlight {
-    background: rgba(255,255,255,0.1);
-    padding: 15px;
-    border-radius: 10px;
-    margin-top: 10px;
-  }
-  .question { margin: 20px 0; }
-  label {
-    display: block;
-    margin: 6px 0;
-    cursor: pointer;
-  }
-  button {
-    background: #80ed99;
-    color: #000;
-    font-weight: bold;
-    border: none;
-    border-radius: 8px;
-    padding: 12px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    display: block;
-    margin: 25px auto;
-  }
-  button:hover { background: #56cfe1; }
-  #result {
-    background: rgba(255,255,255,0.15);
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-    text-align: center;
-    font-size: 1.1em;
-  }
-  #chartContainer {
-    margin-top: 40px;
-  }
-  footer {
-    text-align: center;
-    padding: 30px;
-    font-size: 0.9em;
-    opacity: 0.8;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mundo do Trabalho e Inovações</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #5e60ce, #48bfe3);
+      color: #fff;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.1em;
+      max-width: 700px;
+      margin: auto;
+    }
+    section {
+      max-width: 850px;
+      background: rgba(0, 0, 0, 0.3);
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 15px;
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    ul { line-height: 1.7; }
+    .highlight {
+      background: rgba(255,255,255,0.1);
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    .question { margin: 20px 0; }
+    label {
+      display: block;
+      margin: 6px 0;
+      cursor: pointer;
+    }
+    button {
+      background: #80ed99;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      display: block;
+      margin: 25px auto;
+    }
+    button:hover { background: #56cfe1; }
+    #result {
+      background: rgba(255,255,255,0.15);
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+      text-align: center;
+      font-size: 1.1em;
+    }
+    #chartContainer {
+      margin-top: 40px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9em;
+      opacity: 0.8;
+    }
+  </style>
 </head>
 <body>
 
@@ -116,7 +116,7 @@
 const perguntas = [
   ["O que mais te motiva em um trabalho?", ["criativo","Criar e inovar"],["lider","Liderar pessoas"],["analitico","Resolver problemas complexos"],["colab","Ajudar e colaborar"],["sustentavel","Contribuir com o planeta"],["visionario","Pensar no futuro"],["tecnologico","Trabalhar com tecnologia"]],
   ["Qual dessas atividades você mais gosta?", ["criativo","Criar artes ou conteúdos"],["lider","Organizar equipes"],["analitico","Resolver desafios de lógica"],["colab","Trabalhar em grupo"],["sustentavel","Projetos ambientais"],["visionario","Pensar em ideias de futuro"],["tecnologico","Programar ou usar tecnologia"]],
-  ["Como você reage a mudanças?", ["visionario","Adoro, é sinal de evolução!"],["criativo","Vejo como chance de inovar."],["lider","Motivo os outros a se adaptar."],["analitico","Analiso e planejo."],["colab","Peço ajuda e coopero."],["sustentavel","Penso no impacto social."],["tecnologico","Busco soluções digitais."]],
+  ["Como você reage a mudanças?", ["visionario","Adoro, é sinal de evolução!"],["criativo","Vejo como chance de inovar."],["lider","Motivo os outros a se adaptar."],["analitico","Analiso e plano."],["colab","Peço ajuda e coopero."],["sustentavel","Penso no impacto social."],["tecnologico","Busco soluções digitais."]],
   ["Qual ambiente de trabalho te agrada mais?", ["criativo","Aberto e cheio de ideias novas"],["lider","Dinâmico e com pessoas motivadas"],["analitico","Organizado e desafiador"],["colab","Colaborativo e amigável"],["sustentavel","Ético e sustentável"],["visionario","Inovador e voltado para o futuro"],["tecnologico","Digital e tecnológico"]],
   ["Qual dessas frases te representa?", ["criativo","Penso fora da caixa."],["lider","Gosto de inspirar os outros."],["analitico","Tudo tem uma lógica."],["colab","Trabalhar junto é melhor."],["sustentavel","Quero deixar o mundo melhor."],["visionario","O futuro me inspira."],["tecnologico","Amo aprender sobre tecnologia."]],
   ["Como você aprende melhor?", ["criativo","Experimentando e criando"],["lider","Com desafios e responsabilidades"],["analitico","Estudando dados e teorias"],["colab","Conversando com outras pessoas"],["sustentavel","Com exemplos reais e sociais"],["visionario","Observando tendências"],["tecnologico","Usando ferramentas digitais"]],
@@ -136,9 +136,7 @@ perguntas.forEach((p, i) => {
   quizContainer.innerHTML += html;
 });
 
-let totalResults = JSON.parse(localStorage.getItem("quizTotals")) || {
-  criativo:0, lider:0, analitico:0, colab:0, sustentavel:0, visionario:0, tecnologico:0
-};
+let totalResults = {criativo:0, lider:0, analitico:0, colab:0, sustentavel:0, visionario:0, tecnologico:0};
 
 const ctx = document.getElementById('quizChart').getContext('2d');
 const quizChart = new Chart(ctx, {
@@ -158,17 +156,19 @@ const quizChart = new Chart(ctx, {
   }
 });
 
+const formspreeEndpoint = "https://formspree.io/f/xvgdpovy";
+
 function calculateResult() {
   const respostas = document.querySelectorAll('input[type="radio"]:checked');
-  if (respostas.length < 10) {
+  if (respostas.length < perguntas.length) {
     document.getElementById("result").innerHTML = "<span style='color:#ffd60a;'>⚠️ Responda todas as perguntas antes de ver o resultado.</span>";
     return;
   }
 
   const scores = {criativo:0, lider:0, analitico:0, colab:0, sustentavel:0, visionario:0, tecnologico:0};
   respostas.forEach(a => scores[a.value]++);
-
   const perfil = Object.keys(scores).reduce((a,b)=>scores[a]>scores[b]?a:b);
+
   const mensagens = {
     criativo:"🎨 <b>Criativo Inovador:</b> transforma ideias em realidade.",
     lider:"🚀 <b>Líder Empreendedor:</b> inspira pessoas e promove mudanças.",
@@ -178,15 +178,48 @@ function calculateResult() {
     visionario:"🌍 <b>Visionário do Futuro:</b> antecipa tendências e cria novas ideias.",
     tecnologico:"💻 <b>Criador Tecnológico:</b> domina o digital e inova com impacto."
   };
-
   document.getElementById("result").innerHTML = mensagens[perfil];
 
-  totalResults[perfil]++;
-  localStorage.setItem("quizTotals", JSON.stringify(totalResults));
-
-  quizChart.data.datasets[0].data = Object.values(totalResults);
-  quizChart.update();
+  // Enviar para o Formspree
+  fetch(formspreeEndpoint, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ perfil })
+  })
+  .then(r => {
+    if (r.ok) {
+      console.log("✅ Resultado enviado");
+      carregarGrafico();
+    } else {
+      console.error("Erro no envio:", r.status);
+    }
+  })
+  .catch(err => console.error("Erro:", err));
 }
+
+async function carregarGrafico() {
+  try {
+    const res = await fetch("https://formspree.io/api/forms/xvgdpovy/submissions", {
+      headers: { "Accept": "application/json" }
+    });
+    const dados = await res.json();
+
+    const contagem = {criativo:0, lider:0, analitico:0, colab:0, sustentavel:0, visionario:0, tecnologico:0};
+    dados.submissions.forEach(s => {
+      const p = s.data.perfil;
+      if (contagem.hasOwnProperty(p)) contagem[p]++;
+    });
+
+    quizChart.data.datasets[0].data = Object.values(contagem);
+    quizChart.update();
+  } catch (err) {
+    console.error("Erro ao carregar gráfico:", err);
+  }
+}
+
+// Atualiza a cada 10 segundos
+setInterval(carregarGrafico, 10000);
+carregarGrafico();
 </script>
 
 </body>
